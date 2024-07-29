@@ -1,0 +1,23 @@
+.intro-video-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40vh;
+  	overflow: hidden;
+	aspect-ratio: 1/1;
+	@media screen and (min-width: 600px) {
+		height: 50vh;
+		aspect-ratio: 16/9;
+	}
+	@media screen and (min-width: 1000px) {
+		height: 60vh;
+	}
+}
+
+#intro-video {
+	width: 100%;
+	height: 100%;
+	border: none;
+	pointer-events: none;
+	object-fit: cover;
+}
