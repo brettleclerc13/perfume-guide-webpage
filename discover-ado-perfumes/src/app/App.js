@@ -4,19 +4,25 @@ import NavBar from '../components/NavBar/NavBar';
 import Intro from '../components/IntroVideo/IntroVideo';
 import MemoryLane from '../components/Collections/MemoryLane';
 import Noire from '../components/Collections/Noire';
+import Blanche from '../components/Collections/Blanche';
+import Eaux from '../components/Collections/Eaux';
+import Riviera from '../components/Collections/Riviera';
 
 function App() {
   return (
     <div className="App">
 		<NavBar />
+		<h1 class="title">Découvrez<br />nos parfums</h1>
 		<Intro />
-		<h1 class="title">Découvrez nos parfums</h1>
 		<p class="subtitle">
 			Des vidéos immersives révélant l'artisanat 
 			et l'inspiration derrière chaque parfum unique.
 		</p>
 		<MemoryLane />
 		<Noire />
+		<Blanche />
+		<Eaux />
+		<Riviera />
 	</div>
   );
 }

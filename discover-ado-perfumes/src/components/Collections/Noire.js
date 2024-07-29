@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Cards from './Cards/Cards';
 import './Collections.css'
-import { motion } from "framer-motion"
 
 const Noire = () => {
 	return (
@@ -9,11 +8,7 @@ const Noire = () => {
 			<h2 className="collection-title">
 					Collection Noire
 			</h2>
-			<motion.div
-				className="card-group"
-				drag="x"
-				dragConstraints={{ left: -1500, right: 0 }}
-				>
+			<div className="card-group">
 				<Cards
 					name="Aube Rubis"
 					src="Noire/aube-rubis-768x768.jpg"
@@ -59,7 +54,7 @@ const Noire = () => {
 					src="Noire/rouge-saray-768x768.jpg"
 					alt="Rouge Saray perfume bottle"
 				/>
-			</motion.div>
+			</div>
 		</section>
 	);
 };

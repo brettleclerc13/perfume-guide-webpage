@@ -12,9 +12,13 @@ const Cards = (img_data) => {
 				alt={alt}
 				draggable="false"
 			/>
-			<div className="card-overlay">
-				<h3 className="card-text">{name.replace('_', ' ')}</h3>
-			</div>
+			<div className="card-overlay"></div>
+			<span className="card-text-container">
+				<div className="empty-space"></div>
+				<h3 className="card-text">
+					{name.replace('_', ' ')}
+				</h3>
+			</span>
 		</card>
 	);
 };
