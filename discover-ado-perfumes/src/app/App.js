@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
 		<NavBar />
-		<h1 class="title">Découvrez<br />nos parfums</h1>
+		<h1 className="title">Découvrez<br />nos parfums</h1>
 		<Intro />
-		<p class="subtitle">
+		<p className="subtitle">
 			Des vidéos immersives révélant l'artisanat 
 			et l'inspiration derrière chaque parfum unique.
 		</p>

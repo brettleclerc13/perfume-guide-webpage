@@ -2,12 +2,16 @@ import React from 'react';
 import './Cards.css';
 
 const Cards = (img_data) => {
-	const { name, src, alt } = img_data;
+	const { name, src, alt, onClick } = img_data;
 	return (
-		<card className="card">
+			<div className="card" onClick={() => {
+				console.log(`Card ${name} clicked`);
+				onClick();
+			}}>
 			<img
 				name={name}
 				className="card-img"
+				onClick={onClick}
 				src={`./Elements/Collections/${src}`}
 				alt={alt}
 				draggable="false"
@@ -19,7 +23,7 @@ const Cards = (img_data) => {
 					{name.replace('_', ' ')}
 				</h3>
 			</span>
-		</card>
+		</div>
 	);
 };
 

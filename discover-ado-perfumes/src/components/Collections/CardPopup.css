@@ -1,0 +1,68 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	animation: slideIn 0.5s ease-in forwards;
+}
+
+.popup .popup-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 10;
+}
+
+.popup .image-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	z-index: 20;
+	object-fit: cover;
+}
+
+.popup .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	z-index: 20;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(20, 16, 16, 1) 100%);
+}
+
+.popup .content {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 30;
+	text-align: center;
+	color: white;
+}
+
+.popup .content .h4,
+.popup .content .h5 {
+	color: white;
+}
+
+
+@keyframes slideIn {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
