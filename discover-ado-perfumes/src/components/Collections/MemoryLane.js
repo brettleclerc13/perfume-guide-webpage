@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const MemoryLane = () => {
 	const	[showCardPopUp, setCardPopUp] = useState(false);
-	const	[CardDetails, setCardDetails] = useState({ name: '', image: '', alt: '', subtitle: '', notes: '', intensity: 0 });
+	const	[CardDetails, setCardDetails] = useState({ name: '', slug: '', videoUrl: '' });
 
 	const	handleCardClick = (content) => {
 		setCardDetails(content);
@@ -29,11 +29,8 @@ const MemoryLane = () => {
 					alt="blue madeleine perfume bottle"
 					onClick={() => handleCardClick({
 						name: "Blue Madeleine",
-						image: "/Elements/Layout/Perfume video front image 1.webp",
-						alt: "Blue Madeleine background image",
-						subtitle: "A Journey Through Memories.",
-						notes: "Tête : Bergamote, Poivre Rose, Cannelle\nCœur : Rose Centifolia pays infusion, Thé Noir, Nuage de lait\nFond : Cade, Baume du Pérou, Praline, Santal",
-						intensity: 3
+						slug: 'blue-madeleine',
+						videoUrl: "https://www.youtube.com/embed/https://www.youtube.com/embed/_rRk9vfYyDo?autoplay=1&loop=1&controls=0&playlist=_rRk9vfYyDo"
 					})}
 				/>
 				<Cards
@@ -41,12 +38,9 @@ const MemoryLane = () => {
 					src="MemoryLane/Villa-Primerose-768x768.jpg"
 					alt="blue madeleine perfume bottle"
 					onClick={() => handleCardClick({
-						name: "Villa PrimeRose",
-						image: "/Elements/Inspirations/Pomelo-riviera-2.jpg",
-						alt: "Villa PrimeRose background image",
-						subtitle: "A Fragrance of Elegance.",
-						notes: "Tête : Bergamote, Poivre Rose, Cannelle\nCœur : Rose Centifolia pays infusion, Thé Noir, Nuage de lait\nFond : Cade, Baume du Pérou, Praline, Santal",
-						intensity: 2
+						name: "Villa Primerose",
+						slug: 'villa-primerose',
+						videoUrl: "https://www.youtube.com/embed/https://www.youtube.com/embed/_rRk9vfYyDo?autoplay=1&loop=1&controls=0&playlist=_rRk9vfYyDo"
 					})}
 				/>
 			</div>

@@ -7,7 +7,7 @@
 	animation: slideIn 0.5s ease-in forwards;
 }
 
-.popup .popup-bg {
+.popup-bg {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,29 +15,19 @@
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.9);
 	z-index: 10;
+	margin: 0;
 }
 
-.popup .image-bg {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height:100%;
+#product-video {
 	width: 100%;
-	z-index: 20;
+	height: 100%;
+	border: none;
+	aspect-ratio: 16/9;
+	pointer-events: none;
 	object-fit: cover;
 }
 
-.popup .overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height:100%;
-	width: 100%;
-	z-index: 20;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(20, 16, 16, 1) 100%);
-}
-
-.popup .content {
+.popup .popup-content-container {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -52,11 +42,52 @@
 	color: white;
 }
 
-.popup .content .h4,
-.popup .content .h5 {
-	color: white;
+.popup .back-button-container {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 30;
 }
 
+.popup .back-button {
+	width: 30px;
+	cursor: pointer;
+}
+
+.popup .content {
+	display: flex;
+	flex-direction: column;
+	height: 40%;
+	width: 90%;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.popup button {
+	background-color: #fff;
+	color: #141010;
+	text-transform: uppercase;
+	padding: 0.5rem 3rem;
+	font-size: 0.8rem;
+	font-weight: 300;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 4rem;
+}
+
+.popup button:hover {
+	animation: button-enlarge 0.5s forwards;
+}
+
+@keyframes button-enlarge {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.05);
+	}
+}
 
 @keyframes slideIn {
 	from {
