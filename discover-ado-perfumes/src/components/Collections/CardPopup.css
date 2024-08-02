@@ -2,8 +2,8 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	height:100%;
-	width: 100%;
+	height:100vh;
+	width: 100vw;
 	animation: slideIn 0.5s ease-in forwards;
 }
 
@@ -18,35 +18,18 @@
 	margin: 0;
 }
 
-#product-video {
+.product-video {
 	width: 100%;
 	height: 100%;
-	border: none;
-	aspect-ratio: 16/9;
-	pointer-events: none;
 	object-fit: cover;
 }
 
-.popup .popup-content-container {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height:100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	z-index: 30;
-	text-align: center;
-	color: white;
-}
 
 .popup .back-button-container {
 	position: absolute;
-	top: 10px;
-	left: 10px;
-	z-index: 30;
+	top: 1.5rem;
+	left: 1rem;
+	z-index: 20;
 }
 
 .popup .back-button {
@@ -54,14 +37,12 @@
 	cursor: pointer;
 }
 
-.popup .content {
-	display: flex;
-	flex-direction: column;
-	height: 40%;
-	width: 90%;
-	justify-content: flex-start;
-	align-items: center;
-	margin: 0 auto;
+.button-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
 }
 
 .popup button {

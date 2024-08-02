@@ -30,7 +30,7 @@ const MemoryLane = () => {
 					onClick={() => handleCardClick({
 						name: "Blue Madeleine",
 						slug: 'blue-madeleine',
-						videoUrl: "https://www.youtube.com/embed/https://www.youtube.com/embed/_rRk9vfYyDo?autoplay=1&loop=1&controls=0&playlist=_rRk9vfYyDo"
+						videoUrl: "https://www.youtube.com/embed/Or7GpsSICJs?si=NiIoEtDMMJc0ox4-"
 					})}
 				/>
 				<Cards
@@ -40,7 +40,7 @@ const MemoryLane = () => {
 					onClick={() => handleCardClick({
 						name: "Villa Primerose",
 						slug: 'villa-primerose',
-						videoUrl: "https://www.youtube.com/embed/https://www.youtube.com/embed/_rRk9vfYyDo?autoplay=1&loop=1&controls=0&playlist=_rRk9vfYyDo"
+						videoUrl: "https://www.youtube.com/embed/g1Mbj4Y5K1w?si=WGPMt6HZcqHhLNIf"
 					})}
 				/>
 			</div>
