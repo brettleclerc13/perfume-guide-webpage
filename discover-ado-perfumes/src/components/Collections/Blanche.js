@@ -29,7 +29,7 @@ const Blanche = () => {
 					onClick={() => handleCardClick({
 						name: "Nuda Veritas",
 						slug: 'nuda-veritas',
-						videoUrl: "https://www.youtube.com/embed/bEo_2EJ045s?si=V8CS9WvFKSmLJehU"
+						videoUrl: "bEo_2EJ045s"
 					})}
 				/>
 				<Cards
@@ -39,7 +39,7 @@ const Blanche = () => {
 					onClick={() => handleCardClick({
 						name: "Crépuscule Des âmes",
 						slug: 'crepuscule-des-ames',
-						videoUrl: "https://www.youtube.com/embed/t8uBABw7B6c?si=h5XT1CUs3mFL9ECt"
+						videoUrl: "t8uBABw7B6c"
 					})}
 				/>
 				<Cards
@@ -49,7 +49,7 @@ const Blanche = () => {
 					onClick={() => handleCardClick({
 						name: "Chœur Des Anges",
 						slug: 'choeur-des-anges',
-						videoUrl: "https://www.youtube.com/embed/Gx99sDp6-iw?si=2l6FjnP8OC38ceS2"
+						videoUrl: "Gx99sDp6-iw"
 					})}
 				/>
 				<div className="card-right-padding"></div>

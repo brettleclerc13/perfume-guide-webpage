@@ -30,7 +30,7 @@ const MemoryLane = () => {
 					onClick={() => handleCardClick({
 						name: "Blue Madeleine",
 						slug: 'blue-madeleine',
-						videoUrl: "https://www.youtube.com/embed/Or7GpsSICJs?si=NiIoEtDMMJc0ox4-"
+						videoUrl: "Or7GpsSICJs"
 					})}
 				/>
 				<Cards
@@ -40,7 +40,7 @@ const MemoryLane = () => {
 					onClick={() => handleCardClick({
 						name: "Villa Primerose",
 						slug: 'villa-primerose',
-						videoUrl: "https://www.youtube.com/embed/g1Mbj4Y5K1w?si=WGPMt6HZcqHhLNIf"
+						videoUrl: "g1Mbj4Y5K1w"
 					})}
 				/>
 				<div className="card-right-padding"></div>
