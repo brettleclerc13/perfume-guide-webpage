@@ -4,7 +4,7 @@ import CardPopup from '../CardPopup/CardPopup';
 import './Collections.css'
 import { useState } from 'react';
 
-const MemoryLane = () => {
+const Frivolite = () => {
 	const	[showCardPopUp, setCardPopUp] = useState(false);
 	const	[CardDetails, setCardDetails] = useState({ name: '', slug: '', videoUrl: '' });
 
@@ -20,27 +20,27 @@ const MemoryLane = () => {
 	return (
 		<section className="collection">
 			<h2 className="collection-title">
-					Memory Lane Collection
+					Frivolité Collection
 			</h2>
 			<div className="card-group">
 				<Cards
-					name="Blue Madeleine"
-					src="MemoryLane/Blue-Madeleine-768x768.jpg"
-					alt="blue madeleine perfume bottle"
+					name="Pink Me Up"
+					src="Frivolite/pink-me-up-768x768.jpg"
+					alt="Pink Me Up perfume bottle"
 					onClick={() => handleCardClick({
-						name: "Blue Madeleine",
-						slug: 'blue-madeleine',
-						videoUrl: "https://www.youtube.com/embed/Or7GpsSICJs?si=NiIoEtDMMJc0ox4-"
+						name: "Pink Me Up",
+						slug: 'pink-me-up',
+						videoUrl: "https://www.youtube.com/embed/zWG4NLMSZHE?si=EVNrEZ55L9ZUeFTW"
 					})}
 				/>
 				<Cards
-					name="Villa Primerose"
-					src="MemoryLane/Villa-Primerose-768x768.jpg"
-					alt="blue madeleine perfume bottle"
+					name="Noir By Night"
+					src="Frivolite/noir-by-night-768x768.jpg"
+					alt="Noir By Night perfume bottle"
 					onClick={() => handleCardClick({
-						name: "Villa Primerose",
-						slug: 'villa-primerose',
-						videoUrl: "https://www.youtube.com/embed/g1Mbj4Y5K1w?si=WGPMt6HZcqHhLNIf"
+						name: "Pink Me Up",
+						slug: 'noir-by-night',
+						videoUrl: "https://www.youtube.com/embed/-gFO-clD1KQ?si=J3pwktjBueDwcaNF"
 					})}
 				/>
 				<div className="card-right-padding"></div>
@@ -52,4 +52,4 @@ const MemoryLane = () => {
 	);
 };
 
-export default MemoryLane;
+export default Frivolite;
