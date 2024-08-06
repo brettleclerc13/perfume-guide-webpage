@@ -30,7 +30,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Lune Féline",
 						slug: 'lune-feline',
-						videoUrl: "https://www.youtube.com/embed/_rRk9vfYyDo?si=NiIoEtDMMJc0ox4-"
+						videoUrl: "_rRk9vfYyDo"
 					})}
 				/>
 				<Cards
@@ -40,7 +40,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Rouge Sarây",
 						slug: 'rouge-saray',
-						videoUrl: "https://www.youtube.com/embed/FfJATJUyC-Q?si=BJgjCJ1PYJpY1R--"
+						videoUrl: "FfJATJUyC-Q"
 					})}
 				/>
 				<Cards
@@ -50,7 +50,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Rose Omeyyade",
 						slug: 'rose-omeyyade',
-						videoUrl: "https://www.youtube.com/embed/0W8kofUVsXg?si=PRVSHYBxpwsaDXaK"
+						videoUrl: "0W8kofUVsXg"
 					})}
 				/>
 				<Cards
@@ -60,7 +60,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Bois Sikar",
 						slug: 'bois-sikar',
-						videoUrl: "https://www.youtube.com/embed/ufHvfLNDJSU?si=ywYrhoZ_-_B5WpZt"
+						videoUrl: "ufHvfLNDJSU"
 					})}
 				/>
 				<Cards
@@ -70,7 +70,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Cuir Sacré",
 						slug: 'cuir-sacre',
-						videoUrl: "https://www.youtube.com/embed/rpccKM1dptU?si=CKwPGkKOAaQawXEK"
+						videoUrl: "rpccKM1dptU"
 					})}
 				/>
 				<Cards
@@ -80,7 +80,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Iris Fauve",
 						slug: 'iris-fauve',
-						videoUrl: "https://www.youtube.com/embed/XuWXybyntrA?si=jNwSmzTA7t0LiK0L"
+						videoUrl: "XuWXybyntrA"
 					})}
 				/>
 				<Cards
@@ -90,7 +90,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Larmes Du Désert",
 						slug: 'larmes-du-desert',
-						videoUrl: "https://www.youtube.com/embed/6vHUrEAxt-U?si=H8olwy5TIIt8AnVO"
+						videoUrl: "6vHUrEAxt-U"
 					})}
 				/>
 				<Cards
@@ -100,7 +100,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Musc Immortel",
 						slug: 'musc-immortel',
-						videoUrl: "https://www.youtube.com/embed/Trw2ZWT0tvI?si=dmTuNB_xfKYpz6iA"
+						videoUrl: "Trw2ZWT0tvI"
 					})}
 				/>
 				<Cards
@@ -110,7 +110,7 @@ const Noire = () => {
 					onClick={() => handleCardClick({
 						name: "Aube Rubis",
 						slug: 'aube-rubis',
-						videoUrl: "https://www.youtube.com/embed/x88B8k6v9jU?si=juOADv4W84b_m-NX"
+						videoUrl: "x88B8k6v9jU"
 					})}
 				/>
 				<div className="card-right-padding"></div>
