@@ -30,7 +30,7 @@ const Frivolite = () => {
 					onClick={() => handleCardClick({
 						name: "Pink Me Up",
 						slug: 'pink-me-up',
-						videoUrl: "zWG4NLMSZHE"
+						videoUrl: "https://www.youtube.com/embed/zWG4NLMSZHE?si=EVNrEZ55L9ZUeFTW"
 					})}
 				/>
 				<Cards
@@ -40,7 +40,7 @@ const Frivolite = () => {
 					onClick={() => handleCardClick({
 						name: "Pink Me Up",
 						slug: 'noir-by-night',
-						videoUrl: "-gFO-clD1KQ"
+						videoUrl: "https://www.youtube.com/embed/-gFO-clD1KQ?si=J3pwktjBueDwcaNF"
 					})}
 				/>
 				<div className="card-right-padding"></div>

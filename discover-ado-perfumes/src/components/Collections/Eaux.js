@@ -29,7 +29,7 @@ const Eaux = () => {
 					onClick={() => handleCardClick({
 						name: "Blanc Polychrome",
 						slug: 'blanc-polychrome',
-						videoUrl: "biY4aNXYDvs"
+						videoUrl: "https://www.youtube.com/embed/biY4aNXYDvs?si=De_3W7gmlyF2kpt3"
 					})}
 				/>
 				<div className="card-right-padding"></div>

@@ -29,7 +29,7 @@ const Riviera = () => {
 					onClick={() => handleCardClick({
 						name: "Riviera Sunrise",
 						slug: 'riviera-sunrise',
-						videoUrl: "8B65xRed7Zo"
+						videoUrl: "https://www.youtube.com/embed/8B65xRed7Zo?si=2mrfx-AADOI0RcfQ"
 					})}
 				/>
 				<Cards
@@ -39,7 +39,7 @@ const Riviera = () => {
 					onClick={() => handleCardClick({
 						name: "Pomelo Riviera",
 						slug: 'pomelo-riviera',
-						videoUrl: "8B65xRed7Zo"
+						videoUrl: "https://www.youtube.com/embed/8B65xRed7Zo?si=2mrfx-AADOI0RcfQ"
 					})}
 				/>
 				<Cards
@@ -49,7 +49,7 @@ const Riviera = () => {
 					onClick={() => handleCardClick({
 						name: "Riviera Lazuli",
 						slug: 'riviera-lazuli',
-						videoUrl: "8B65xRed7Zo"
+						videoUrl: "https://www.youtube.com/embed/8B65xRed7Zo?si=2mrfx-AADOI0RcfQ"
 					})}
 				/>
 				<Cards
@@ -59,7 +59,7 @@ const Riviera = () => {
 					onClick={() => handleCardClick({
 						name: "Riviera Drive",
 						slug: 'riviera-drive',
-						videoUrl: "8B65xRed7Zo"
+						videoUrl: "https://www.youtube.com/embed/8B65xRed7Zo?si=2mrfx-AADOI0RcfQ"
 					})}
 				/>
 				<div className="card-right-padding"></div>
