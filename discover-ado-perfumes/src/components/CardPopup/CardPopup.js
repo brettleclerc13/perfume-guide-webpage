@@ -1,9 +1,22 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactDom from 'react-dom';
 import './CardPopup.css';
 
 const CardPopup = ({ details, closePopup }) => {
 	useEffect(() => {
+		const loadYouTubeAPI = () => {
+			if (!window.YT) {
+			  const tag = document.createElement('script');
+			  tag.src = 'https://www.youtube.com/iframe_api';
+			  const firstScriptTag = document.getElementsByTagName('script')[0];
+			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	  
+			  window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+			} else {
+			  onYouTubeIframeAPIReady();
+			}
+		};
+
 		// This function will be called when the IFrame API is ready
 		const onYouTubeIframeAPIReady = () => {
 			new window.YT.Player('youtube-player', {
@@ -14,7 +27,6 @@ const CardPopup = ({ details, closePopup }) => {
 		  });
 
 			function onPlayerReady(event) {
-				event.target.setPlaybackQuality('large'); // Set quality to 480p
 				event.target.playVideo();
 				// Hide the overlay once the video starts playing
 				const overlay = document.getElementById('video-overlay');
@@ -28,12 +40,9 @@ const CardPopup = ({ details, closePopup }) => {
 				document.getElementById('video-overlay');
 			}
 		};
-	
-		if (window.YT && window.YT.Player) {
-		  onYouTubeIframeAPIReady();
-		} else {
-			window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
-		}
+
+		// Load the IFrame API asynchronously
+		loadYouTubeAPI();
 	}, [details]);
 
 	useEffect(() => {

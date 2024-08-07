@@ -15,7 +15,3 @@ const IntroVideo = () => {
 };
 
 export default IntroVideo;
-
-// const onReady = (event) => {
-// 	event.target.playVideo();
-// };

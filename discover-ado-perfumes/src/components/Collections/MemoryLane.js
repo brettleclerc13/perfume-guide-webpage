@@ -1,4 +1,3 @@
-import React from 'react';
 import Cards from '../Cards/Cards';
 import CardPopup from '../CardPopup/CardPopup';
 import './Collections.css'
