@@ -4,7 +4,6 @@ const Cards = (img_data) => {
 	const { name, src, alt, onClick } = img_data;
 	return (
 			<div className="card" onClick={() => {
-				console.log(`Card ${name} clicked`);
 				onClick();
 			}}>
 			<img

@@ -37,7 +37,7 @@ const Frivolite = () => {
 					src="Frivolite/noir-by-night-768x768.jpg"
 					alt="Noir By Night perfume bottle"
 					onClick={() => handleCardClick({
-						name: "Pink Me Up",
+						name: "Noir By Night",
 						slug: 'noir-by-night',
 						videoUrl: "-gFO-clD1KQ"
 					})}

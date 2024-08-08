@@ -1,0 +1,34 @@
+.search-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100vh;
+	width: 100vw;
+	animation: slideIn 0.5s ease-in forwards;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.search-results {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
