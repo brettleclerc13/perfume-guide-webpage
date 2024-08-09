@@ -12,12 +12,19 @@ nav {
 	margin: 0 5%;
 }
 
+
 #ADO-logo {
 	width: 200px;
 }
 
-#Search-icon {
+#search-icon {
 	width: 25px;
+	transition: transform 0.2s ease-in-out;
+	cursor: auto;
+}
+
+#search-icon:active {
+	transform: scale(1.1);
 }
 
 .nav-group:first-child {

@@ -16,16 +16,16 @@ const NavBar = () => {
 	return (
 		<nav>
 			<img
-				src="./Elements/Layout/ADO_logo.svg"
 				className="nav-group"
+				src="./Elements/Layout/ADO_logo.svg"
 				id="ADO-logo"
 				alt="logo"
 				draggable="false"
 			/>
 			<img
-				src="./Elements/Layout/Search.svg"
 				className="nav-group"
-				id="Search-icon"
+				src="./Elements/Layout/Search.svg"
+				id="search-icon"
 				alt="search-button"
 				draggable="false"
 				onClick={handleClick}

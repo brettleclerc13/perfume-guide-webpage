@@ -13,11 +13,15 @@ function App() {
 	return (
 		<div className="App">
 			<NavBar />
-			<h1 className="title">Perfume<br />guide</h1>
+			<h1 className="title">Perfume guide</h1>
 			<p className="subtitle">
 				with founder Jean-Philippe<br />and master perfumer Marie Salamagne
 			</p>
-			<Intro />
+			<img
+				className="homepage-image"
+				src="./Elements/Layout/ADO_homepage_image_4x3.jpg"
+				alt="ADO homepage image"
+			/>
 			<p className="description">
 				Select the videos matching the samples in your discovery set, and let us unveil the emotions and behind the scenes of each fragrance.
 			</p>
