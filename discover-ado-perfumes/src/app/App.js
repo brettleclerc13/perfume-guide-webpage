@@ -1,7 +1,6 @@
 import './App.css';
 import '../components/NavBar/NavBar';
 import NavBar from '../components/NavBar/NavBar';
-import Intro from '../components/IntroVideo/IntroVideo';
 import MemoryLane from '../components/Collections/MemoryLane';
 import Frivolite from '../components/Collections/Frivolite';
 import Noire from '../components/Collections/Noire';
@@ -20,7 +19,7 @@ function App() {
 			<img
 				className="homepage-image"
 				src="./Elements/Layout/ADO_homepage_image_4x3.jpg"
-				alt="ADO homepage image"
+				alt="Jean-Philippe and Marie Salamagne testing perfumes"
 			/>
 			<p className="description">
 				Select the videos matching the samples in your discovery set, and let us unveil the emotions and behind the scenes of each fragrance.

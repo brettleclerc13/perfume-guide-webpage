@@ -15,13 +15,15 @@ const NavBar = () => {
 
 	return (
 		<nav>
-			<img
-				className="nav-group"
-				src="./Elements/Layout/ADO_logo.svg"
-				id="ADO-logo"
-				alt="logo"
-				draggable="false"
-			/>
+			<a className="nav-group" href="https://atelierdesors.com" target="_blank" rel="noopener noreferrer">
+				<img
+					className="nav-group"
+					src="./Elements/Layout/ADO_logo.svg"
+					id="ADO-logo"
+					alt="logo"
+					draggable="false"
+				/>
+			</a>
 			<img
 				className="nav-group"
 				src="./Elements/Layout/Search.svg"
