@@ -17,7 +17,7 @@
 	font-size: 2.2rem;
 }
 
-.subtitle {
+.subtitle,.description {
 	width: 80%;
 	height: auto;
 	margin: 1rem 0;
@@ -27,15 +27,38 @@
 }
 
 .description {
-	width: 80%;
-	height: auto;
-	margin: 1rem 0;
 	font-size: 0.8rem;
-	font-weight: 300;
-	text-align: center;
 }
 
 .homepage-image {
 	width: 90%;
 	height: auto;
+}
+
+/* Mobile Portrait (up to 480px) */
+@media (max-width: 480px) {
+    .homepage-image {
+        width: 90%;
+    }
+}
+
+/* Mobile Landscape (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .homepage-image {
+        width: 80%;
+    }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .homepage-image, .subtitle, .description {
+        width: 70%;
+    }
+}
+
+/* Desktops (1025px and above) */
+@media (min-width: 1025px) {
+    .homepage-image, .subtitle, .description {
+        width: 30%;
+    }
 }

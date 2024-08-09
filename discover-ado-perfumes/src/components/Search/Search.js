@@ -48,10 +48,18 @@ const Search = ({closeSearchBar}) => {
 		setCardPopUp(false);
 	};
 
+	const handleContainerClick = (e) => {
+        // Only close search if clicking outside the search content
+        if (e.target.closest('.search-container') === e.currentTarget) {
+            closeSearchBar();
+        }
+    };
+
 	return ReactDom.createPortal(
-		<section className="search-container">
+		<section className="search-container" onClick={handleContainerClick}>
 			<input
 				value={query}
+				onClick={(e) => {e.stopPropagation()}}
 				onChange={e => setQuery(e.target.value)}
 				className="search-bar"
 				type="text"
@@ -61,12 +69,15 @@ const Search = ({closeSearchBar}) => {
 				{filteredPerfumes.map(perfume => (
 					<div
 						className="search-item"
-						onClick={() => handleCardClick({
-							name: `${perfume.name}`,
-							slug: `${perfume.slug}`,
-							videoUrl: `${perfume.videoUrl}`
-						})}
-						>
+						onClick={(e) => {
+							e.stopPropagation();
+							handleCardClick({
+								name: `${perfume.name}`,
+								slug: `${perfume.slug}`,
+								videoUrl: `${perfume.videoUrl}`
+							});
+						}}
+					>
 						<img
 							className="search-item-image"
 							src={`./Elements/Collections/${perfume.image}`}

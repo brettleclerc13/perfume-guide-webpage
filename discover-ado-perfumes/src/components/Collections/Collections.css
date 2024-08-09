@@ -30,5 +30,15 @@
 
 .card-group:active {
 	cursor: grabbing;
-	/* to be modified */
+}
+
+@media (min-width: 768px) {
+	.collection {
+		align-items: center;
+	}
+	.card-group {
+		justify-content: center;
+		margin: 0;
+		margin-bottom: 3%;
+	}
 }
