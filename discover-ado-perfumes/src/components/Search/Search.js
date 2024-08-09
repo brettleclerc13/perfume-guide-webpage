@@ -3,7 +3,7 @@ import CardPopup from '../CardPopup/CardPopup';
 import ReactDom from 'react-dom';
 import './Search.css';
 
-const Search = (closeSearchBar) => {
+const Search = ({closeSearchBar}) => {
 	const perfumes = useMemo(() => [
 					{name: 'Blue Madeleine', image: 'MemoryLane/Blue-Madeleine-768x768.jpg', slug: 'blue-madeleine', videoUrl: 'Or7GpsSICJs'},
 					{name: 'Villa Primerose', image: 'MemoryLane/Villa-Primerose-768x768.jpg', slug: 'villa-primerose', videoUrl: 'g1Mbj4Y5K1w'},
@@ -50,14 +50,6 @@ const Search = (closeSearchBar) => {
 
 	return ReactDom.createPortal(
 		<section className="search-container">
-			<div className='back-button-container'>
-                <img
-                    src='./Elements/Layout/arrow_back.svg'
-                    className='back-button'
-                    alt="back button"
-                    onClick={closeSearchBar}
-                />
-            </div>
 			<input
 				value={query}
 				onChange={e => setQuery(e.target.value)}
@@ -68,7 +60,7 @@ const Search = (closeSearchBar) => {
 			<div className="search-results">
 				{filteredPerfumes.map(perfume => (
 					<div
-						className="perfume-search-card"
+						className="search-item"
 						onClick={() => handleCardClick({
 							name: `${perfume.name}`,
 							slug: `${perfume.slug}`,
@@ -76,15 +68,19 @@ const Search = (closeSearchBar) => {
 						})}
 						>
 						<img
-							className="perfume-image"
+							className="search-item-image"
 							src={`./Elements/Collections/${perfume.image}`}
 							alt={perfume.name}
 							draggable="false"
 						/>
-						<div className="perfume-name">{perfume.name}</div>
+						<div className="search-item-name">{perfume.name}</div>
 					</div>
 				))}
 			</div>
+			<button
+				className="close-button"
+				onClick={closeSearchBar}
+			>Close</button>
 			{showCardPopUp && (
 				<CardPopup details={CardDetails} closePopup={closeCardPopUp} />
 			)}

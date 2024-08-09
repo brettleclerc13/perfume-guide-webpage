@@ -8,13 +8,11 @@ import Noire from '../components/Collections/Noire';
 import Blanche from '../components/Collections/Blanche';
 import Eaux from '../components/Collections/Eaux';
 import Riviera from '../components/Collections/Riviera';
-import Search from '../components/Search/Search'
 
 function App() {
 	return (
 		<div className="App">
 			<NavBar />
-			<Search />
 			<h1 className="title">Perfume<br />guide</h1>
 			<p className="subtitle">
 				with founder Jean-Philippe<br />and master perfumer Marie Salamagne
