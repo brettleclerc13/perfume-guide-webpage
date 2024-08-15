@@ -29,7 +29,7 @@ function App() {
 				alt="Jean-Philippe and Marie Salamagne testing perfumes"
 			/>
 			<p className="description">
-				Select the videos matching the samples in your discovery set, and let us unveil the emotions and behind the scenes of each fragrance.
+				{t('description')}
 			</p>
 			<MemoryLane />
 			<Frivolite />
