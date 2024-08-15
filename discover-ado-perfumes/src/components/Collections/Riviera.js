@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Cards from '../Cards/Cards';
 import CardPopup from '../CardPopup/CardPopup';
 import './Collections.css'
+import '../../i18n'
+import { useTranslation } from 'react-i18next';
 
 const Riviera = () => {
 	const	[showCardPopUp, setCardPopUp] = useState(false);
@@ -16,10 +18,12 @@ const Riviera = () => {
 		setCardPopUp(false);
 	};
 
+	const { t } = useTranslation();
+
 	return (
 		<section className="collection">
 			<h2 className="collection-title">
-				Riviera Collection
+				{t('riviera_title')}
 			</h2>
 			<div className="card-group">
 				<Cards

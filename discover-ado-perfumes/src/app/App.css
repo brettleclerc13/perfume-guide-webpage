@@ -26,6 +26,14 @@
 	text-align: center;
 }
 
+#subtitle-1 {
+	margin-bottom: 0;
+}
+
+#subtitle-2 {
+	margin-top: 0;
+}
+
 .description {
 	font-size: 0.8rem;
 }

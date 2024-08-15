@@ -2,6 +2,8 @@ import Cards from '../Cards/Cards';
 import CardPopup from '../CardPopup/CardPopup';
 import './Collections.css'
 import { useState } from 'react';
+import '../../i18n';
+import { useTranslation } from 'react-i18next';
 
 const Noire = () => {
 	const	[showCardPopUp, setCardPopUp] = useState(false);
@@ -16,10 +18,11 @@ const Noire = () => {
 		setCardPopUp(false);
 	};
 
+	const { t } = useTranslation();
 	return (
 		<section className="collection">
 			<h2 className="collection-title">
-					Black Collection
+					{t('noire_title')}
 			</h2>
 			<div className="card-group">
 				<Cards

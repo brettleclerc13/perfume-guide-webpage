@@ -7,14 +7,21 @@ import Noire from '../components/Collections/Noire';
 import Blanche from '../components/Collections/Blanche';
 import Eaux from '../components/Collections/Eaux';
 import Riviera from '../components/Collections/Riviera';
+import '../i18n';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+	const { t } = useTranslation();
+
 	return (
 		<div className="App">
 			<NavBar />
-			<h1 className="title">Perfume guide</h1>
-			<p className="subtitle">
-				with founder Jean-Philippe<br />and master perfumer Marie Salamagne
+			<h1 className="title">{t('title')}</h1>
+			<p className="subtitle" id="subtitle-1">
+				{t('subtitle_part_1')}
+			</p>
+			<p className="subtitle" id="subtitle-2">
+				{t('subtitle_part_2')}
 			</p>
 			<img
 				className="homepage-image"

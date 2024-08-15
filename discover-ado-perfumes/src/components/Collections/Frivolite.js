@@ -2,6 +2,8 @@ import Cards from '../Cards/Cards';
 import CardPopup from '../CardPopup/CardPopup';
 import './Collections.css'
 import { useState } from 'react';
+import '../../i18n';
+import { useTranslation } from 'react-i18next';
 
 const Frivolite = () => {
 	const	[showCardPopUp, setCardPopUp] = useState(false);
@@ -16,10 +18,12 @@ const Frivolite = () => {
 		setCardPopUp(false);
 	};
 
+	const { t } = useTranslation();
+
 	return (
 		<section className="collection">
 			<h2 className="collection-title">
-					Frivolité Collection
+					{t('frivolite_title')}
 			</h2>
 			<div className="card-group">
 				<Cards
