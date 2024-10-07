@@ -1,6 +1,7 @@
 import './App.css';
 import '../components/NavBar/NavBar';
 import NavBar from '../components/NavBar/NavBar';
+import Abstraction from '../components/Collections/Abstraction';
 import MemoryLane from '../components/Collections/MemoryLane';
 import Frivolite from '../components/Collections/Frivolite';
 import Noire from '../components/Collections/Noire';
@@ -31,6 +32,7 @@ function App() {
 			<p className="description">
 				{t('description')}
 			</p>
+			<Abstraction />
 			<MemoryLane />
 			<Frivolite />
 			<Noire />

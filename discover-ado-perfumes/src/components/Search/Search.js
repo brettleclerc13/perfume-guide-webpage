@@ -5,6 +5,8 @@ import './Search.css';
 
 const Search = ({closeSearchBar}) => {
 	const perfumes = useMemo(() => [
+					{name: 'Kawa Karda', image: 'Abstraction/Kawa Karda Extrait Packshot.jpg', slug: 'kawa-karda', videoUrl: 'Or7GpsSICJs'},
+					{name: 'Cocoa Kimiya', image: 'Abstraction/Cocoa Kimiya Extrait Packshot.jpg', slug: 'cocoa-kimiya', videoUrl: 'g1Mbj4Y5K1w'},
 					{name: 'Blue Madeleine', image: 'MemoryLane/Blue-Madeleine-768x768.jpg', slug: 'blue-madeleine', videoUrl: 'Or7GpsSICJs'},
 					{name: 'Villa Primerose', image: 'MemoryLane/Villa-Primerose-768x768.jpg', slug: 'villa-primerose', videoUrl: 'g1Mbj4Y5K1w'},
 					{name: 'Pink Me Up', image: 'Frivolite/pink-me-up-768x768.jpg', slug: 'pink-me-up', videoUrl: 'zWG4NLMSZHE'},
