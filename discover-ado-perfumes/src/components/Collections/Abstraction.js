@@ -33,7 +33,7 @@ const Abstraction = () => {
 					onClick={() => handleCardClick({
 						name: "Kawa Karda",
 						slug: 'kawa-karda',
-						videoUrl: "Or7GpsSICJs"
+						videoUrl: "Xi5cVo-2T94"
 					})}
 				/>
 				<Cards
@@ -43,7 +43,7 @@ const Abstraction = () => {
 					onClick={() => handleCardClick({
 						name: "Cocoa Kimiya",
 						slug: 'cocoa-kimiya',
-						videoUrl: "g1Mbj4Y5K1w"
+						videoUrl: "XrxS08c574Y"
 					})}
 				/>
 				<div className="card-right-padding"></div>
