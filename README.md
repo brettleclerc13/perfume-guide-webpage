@@ -41,6 +41,7 @@ To display the React app on your WordPress site:
 - **Add HTML and Script:** In the page content editor, add the following HTML and script tags:
 
   ```<div id="root"></div><script src="/xyz/static/js/main.aa48d75a.js"></script>```
+  Replace `/xyz` with your app directory and the main.`aa48d75a`.js part of the file with the generated string found in your main JS file.
 
 
 ## Notes
